@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 module.exports = {
   apps: [{
-    name: "ic-billing-app",
+    name: "your-app-name",
     script: "/root/your-app-name/venv/bin/python3",
     args: "-m streamlit run /root/your-app-path/app.py --server.address 0.0.0.0 --server.port 8501",
     interpreter: "none",
