@@ -11,8 +11,17 @@ ic-billing-automate/
  └── ecosystem.config.js
 ```
 
+## 1. Install lib with venv
 
-## edit ecosystem.config.js
+```
+cd  your-app-path
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+
+## 2. edit ecosystem.config.js
 
 ```
 module.exports = {
@@ -25,8 +34,25 @@ module.exports = {
       STREAMLIT_SERVER_HEADLESS: "true"
     }
   }]
-```
+
 }
+```
+
+## 3. Run PM2  (ออกจาก venv ด้วย)
+
+```
+cd your-app-path
+pm2 start ecosystem.config.js
+```
+
+## 4. Check status (optinal)
+
+```
+pm2 list
+pm2 log (app-id)
+pm2 startup
+pm2 save
+```
 
 
 
