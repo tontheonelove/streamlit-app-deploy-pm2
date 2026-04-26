@@ -68,6 +68,7 @@ pm2 save
 ```
 streamlit run app.py (Locally-DEV)
 streamlit run app.py --server.address 0.0.0.0  (Public-DEV)
+streamlit run app.py --server.address 0.0.0.0 --server.port 8501  (Public-Custom-port)
 ```
 # Congration 😊😊😊
 
