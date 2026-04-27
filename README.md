@@ -16,8 +16,7 @@ ic-billing-automate/
 ```
 (For Linux)
 cd  your-app-path
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -25,8 +24,7 @@ pip install -r requirements.txt
 ```
 (For Windows)
 cd  your-app-path
-python -m venv venv
-venv\Scripts\activate
+python -m venv venv && venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
